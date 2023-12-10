@@ -1,2 +1,2 @@
 # SecureEHR
-Security Application for Electronic Health Records(EHRs)
+A Secure Application for Electronic Health Records(EHRs)
