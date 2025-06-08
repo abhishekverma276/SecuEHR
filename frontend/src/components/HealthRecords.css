@@ -1,0 +1,135 @@
+.medical-records-container {
+  background: #282c34;
+  color: #fff;
+  padding: 50px;
+  font-family: 'Arial', sans-serif;
+  text-align: center;
+  min-height: 115vh;
+}
+
+.header {
+  margin-bottom: 20px;
+}
+
+.header button {
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.header button:hover {
+  background-color: #0056b3;
+}
+
+h1 {
+  text-align: center;
+  margin-top: 20px;
+  color: #fff;
+}
+
+.action-buttons {
+  display: flex;
+  justify-content: flex-end;
+  margin-top: 20px;
+}
+
+.action-buttons button {
+  background-color: #28a745;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.action-buttons button:hover {
+  background-color: #218838;
+}
+
+.form-container {
+  background-color: #333;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  margin-top: 20px;
+}
+
+.form-container h2 {
+  text-align: center;
+  margin-bottom: 20px;
+  color: #fff;
+}
+
+.form-group {
+  margin-bottom: 15px;
+}
+
+.form-group label {
+  display: block;
+  margin-bottom: 8px;
+  color: #fff;
+}
+
+.form-group input {
+  width: 100%;
+  padding: 10px;
+  font-size: 16px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  background-color: #fff;
+  color: #333;
+}
+
+.table {
+  width: 80%; /* Increase the width */
+  margin: 0 auto; /* Center the table horizontally */
+  margin-top: 20px; /* Adjust the top margin */
+  border-collapse: collapse;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  color: #333;
+}
+
+.table th,
+.table td {
+  padding: 15px;
+  text-align: left;
+  border-bottom: 1px solid #ddd;
+}
+
+.table th {
+  background-color: #007bff;
+  color: #fff;
+}
+
+.table td {
+  background-color: #fff;
+}
+
+.table button {
+  padding: 8px 12px;
+  margin-right: 5px;
+  cursor: pointer;
+}
+
+.table button.btn-info {
+  background-color: #17a2b8;
+  color: #fff;
+  border: none;
+}
+
+.table button.btn-info:hover {
+  background-color: #117a8b;
+}
+
+.table button.btn-danger {
+  background-color: #dc3545;
+  color: #fff;
+  border: none;
+}
+
+.table button.btn-danger:hover {
+  background-color: #bd2130;
+}

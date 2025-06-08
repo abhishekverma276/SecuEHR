@@ -1,0 +1,18 @@
+.login-background {
+    background-image: url('loginbackground.jpeg');
+    background-size: cover;
+    background-position: center;
+    height: 105vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.login-content {
+    background-color: rgba(255, 255, 255, 0.8);
+    padding: 20px;
+    border-radius: 10px;
+    width: 40%;
+}
