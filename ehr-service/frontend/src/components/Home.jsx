@@ -64,3 +64,46 @@ const Dashboard = () => {
 };
 
 export default Dashboard;
+
+
+import React from 'react';
+import { Link } from 'react-router-dom';
+import './Home.css';
+import { QuickAccessButtons } from './index';
+
+const Home = () => {
+    const backgroundStyle = {
+        background: 'linear-gradient(135deg, #16222A, #3A6073)',
+        minHeight: '105vh',
+        display: 'flex',
+        flexDirection: 'column',
+        alignItems: 'center',
+        justifyContent: 'center',
+        padding: '50px',
+    };
+
+    // Define admin-specific quick access buttons
+    const adminQuickAccessButtons = [
+        { name: 'User Management', link: '/admin/users' },
+        { name: 'Audit Logs', link: '/admin/audit-logs' },
+        { name: 'System Configuration', link: '/admin/config' },
+        { name: 'Reports', link: '/admin/reports' }
+    ];
+
+    return (
+        <div style={backgroundStyle}>
+            <h1 style={{ color: '#fff', fontSize: '36px', marginBottom: '30px' }}>Welcome to SecuEHR Admin Dashboard!</h1>
+            
+            {/* Quick Access Buttons for Admin */}
+            <QuickAccessButtons buttons={adminQuickAccessButtons} />
+            
+            <div className="button-container">
+                {/* Existing buttons can be placed here */}
+            </div>
+            <Link to='/login' className="btn" style={{ color: 'white', textDecoration: 'none', backgroundColor: 'red', padding: '10px 20px', marginTop: '20px' }}>Logout</Link>
+            <p style={{ color: 'white', marginTop: '20px' }}>©️SecuEHR</p>
+        </div>
+    );
+};
+
+export default Home;

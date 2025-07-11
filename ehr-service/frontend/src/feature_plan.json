@@ -1,0 +1,48 @@
+
+{
+  "feature": "Quick Access Buttons for Dashboards",
+  "description": "Add role-based quick access buttons to Admin, Doctor, and Patient dashboards.",
+  "components": [
+    {
+      "name": "QuickAccessButtons",
+      "purpose": "Reusable component for displaying quick access navigation buttons",
+      "props": {
+        "buttons": "Array of button objects with name and link properties"
+      }
+    }
+  ],
+  "dashboards": [
+    {
+      "role": "Admin",
+      "quickAccessLinks": [
+        "User Management",
+        "Audit Logs",
+        "System Configuration",
+        "Reports"
+      ]
+    },
+    {
+      "role": "Doctor",
+      "quickAccessLinks": [
+        "Patient Records",
+        "Appointment Schedule",
+        "Prescription Management",
+        "Lab Results"
+      ]
+    },
+    {
+      "role": "Patient",
+      "quickAccessLinks": [
+        "Appointment Booking",
+        "Medical History",
+        "Prescriptions",
+        "Messages"
+      ]
+    }
+  ],
+  "implementation": {
+    "frontend": true,
+    "backend": false,
+    "technologies": ["React", "react-router-dom", "CSS"]
+  }
+}
